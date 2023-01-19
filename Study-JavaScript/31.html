@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <form id="form1" name="Form1" action=" " method="post">
+            podaj liczbe<input type="" name="number" id="number"/>
+            <br>
+            podaj liczbe<input type="" name="number2" id="number2"/>
+            <br>
+            <button onclick="calculator()">+</button>
+            <br>
+            <button onclick="calculator1()">-</button>
+            <br>
+            <button onclick="calculator2()">*</button>
+            <br>
+            <button onclick="calculator3()">/</button>
+
+        <script type="text/Javascript">
+            function calculator() {
+                var zmianna = document.forms['Form1'].number.value;
+                var zmianna2 = document.forms['Form1'].number2.value;
+                alert(parseInt(zmianna) + parseInt(zmianna2));
+            }
+            function calculator1() {
+                var zmianna = document.forms['Form1'].number.value;
+                var zmianna2 = document.forms['Form1'].number2.value;
+                alert(parseInt(zmianna) - parseInt(zmianna2));
+            }
+            function calculator2() {
+                var zmianna = document.forms['Form1'].number.value;
+                var zmianna2 = document.forms['Form1'].number2.value;
+                alert(parseInt(zmianna) * parseInt(zmianna2));
+            }
+            function calculator3() {
+                var zmianna = document.forms['Form1'].number.value;
+                var zmianna2 = document.forms['Form1'].number2.value;
+                alert(parseInt(zmianna) / parseInt(zmianna2));
+            }
+         </script>
+</form>
+</body>
+</html>

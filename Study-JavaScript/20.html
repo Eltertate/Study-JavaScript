@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Dane = {
+            marka: "Tesla ",
+            model: " xxl-ultra-pro-version-model",
+            rok_produkcji: "2018",
+            przebieg: 12355,
+            numer_rej: 1235,
+            wyswietlDane: function(){
+                document.write(this.marka + "<br>" + this.model + "<br>" + this.przebieg + "<br>" + this.rok_produkcji + "<br>" + "<br>" );
+            },
+            wyswietlDetal: function(){
+                document.write(this.marka + "<br>" + this.model + "<br>" + this.przebieg + "<br>" + this.rok_produkcji + "<br>" + this.numer_rej);
+            }
+    }
+    Dane.wyswietlDane();
+    Dane.wyswietlDetal();
+    </script>
+</body>
+</html>

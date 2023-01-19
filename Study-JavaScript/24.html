@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const date = new Date()
+        const tydzien = {
+            1 : "Poniedziałek",
+            2 : "Wtorek",
+            3 : "Sroda",
+            4 : "Czwartek",
+            5 : "Piatek",
+            6 : "Sobota",
+            7 : "Niedzielia"
+        }
+        const m = ["styczen","luty","marzec","kwiecien","maj","czerwiec","lipiec","siepien","wrzesien","parzdzernik","listopad","grudzien"]
+
+        document.write(tydzien[date.getDay()] + "," + date.getDate() + " " + m[date.getMonth()] + "" + date.getDFullYear() + " roku4gg")
+
+        document.write("<br>" + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds())
+    </script>
+</body>
+</html>

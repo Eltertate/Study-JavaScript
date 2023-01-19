@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="refresh" content="1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: rgb(207, 192, 192);">
+    <table border="5">
+    <th>
+    <table>
+        <tr>
+            <th style="background-color: blue;" >
+                <span style="color: white;">2022</span>
+            </th>
+           <th style="background-color: rgb(255, 0, 212);"><span style="color:white;"></span><script>
+                const date = new Date()
+                document.write(date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds())
+            </script></span></th>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <script>
+                    const dates = new Date()
+                    const m = ["styczen","luty","marzec","kwiecien","maj","czerwiec","lipiec","siepien","wrzesien","parzdzernik","Listopad","grudzien"]
+                    document.write(m[dates.getMonth()])
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3" style="font-size:250px">
+               <script>
+                    document.write(date.getDate())
+                </script>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="3">
+                <script>
+            const tydzien = {
+            1 : "Poniedziałek",
+            2 : "Wtorek",
+            3 : "Sroda",
+            4 : "Czwartek",
+            5 : "Piatek",
+            6 : "Sobota",
+            7 : "Niedzielia"
+        }
+            document.write(tydzien[date.getDay()])
+            location.reload(); 
+                </script>
+            </th>
+        </tr>
+    </table>
+</th>
+</table>
+</body>
+</html>

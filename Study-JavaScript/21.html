@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Klient (nazwisko_k, imie_k, zawod_k){
+            this.nazwisko = nazwisko_k;
+            this.imie = imie_k;
+            this.zawod = zawod_k;
+            this.wypisz = function(){
+                alert(this.nazwisko + " " + this.imie);
+            }
+        }
+        var osoba2 = new Klient("Nowak","Anna","sekretarka");
+        var osoba1 = new Klient("Kowalski","Jan","kierowca");
+        osoba1.wypisz();
+        osoba2.wypisz();
+    </script>
+</body>
+</html>

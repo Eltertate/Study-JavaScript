@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <marquee scrollamount="150">
+    <h2>Zmien tekst</h2>
+    <script>
+        var id = window.setInterval(
+        function zmien_tekst()
+        {
+            document.getElementById('blok').innerHTML=' Wiosna, wiosna wonna i radosna';
+            window.clearInterval(id);
+        },3000);
+
+        var id = window.setInterval(
+
+        function zmien_tekst2(){
+            document.getElementById('blok').innerHTML=' Hu, hu, ha nasza zima zła';
+            window.clearInterval(id);
+        },3000);
+    </script>
+    <p>Pory roku<b id ="blok"> Hu, hu, ha nasza zima zła</b></p>
+    <input type="button" onclick="zmien_tekst()" value="Zmien tekst"/>
+    <input type="button" onclick="zmien_tekst2()" value="Zmien tekst"/>
+    </marquee>
+</body>
+</html>
